@@ -33,10 +33,10 @@ header span a:last-child{
 .redes {
     gap: 35px;
 }
-.redes svg{
+header svg{
     width: 30px;
     fill: white;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 /*Redes Sociales*/
@@ -56,14 +56,16 @@ nav > a, nav > select{
     font-size: 18px;
     cursor: pointer;
     font-weight: bold;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 /*Nav*/
 
 
 /*Comportamiento del nav y la seccion de redes*/
-nav > a:hover, nav > select:hover, .redes > svg:hover{
+nav > a:hover, nav > select:hover, .redes > svg:hover, nav > a > svg:hover{
     transform: scale(1.1);
+    color: rgb(74, 74, 230);
+    fill:rgb(74, 74, 230);
 }
 /*Comportamiento del nav y la seccion de redes*/
 
@@ -78,3 +80,56 @@ h1{
 /*Titulo en el header*/
 
 /*Header*/
+
+/*Main*/
+.hero {
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.info{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+.imagen{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: -10px;  
+}
+.imagen > img{
+    width: 90%;
+}
+.info h3{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cont-derecho{
+    max-height:250px;
+    max-width:40px;
+    border-radius: 10px 0px 0px 10px ;
+    background-color: lightgray;
+    padding: 10px 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cont-derecho svg{
+    width:25px;
+    margin: 10px 0px;
+}
+/*Main*/
