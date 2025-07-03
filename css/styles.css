@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*Header*/
+header{   
+    background: rgba(0, 0, 0, 0.5);
+    height: 65vh;
+}
+header  div{
+    display: flex;
+    align-items: center;
+    padding:20px 30px;
+    justify-content: space-between;
+    font-size: 18px ;
+    color: white;
+}
+header span a{
+    border-right: 1px solid white;
+    padding: 0px 12px
+}
+header span a:last-child{
+    border:none;
+}
+
+/*Redes Sociales*/
+.redes {
+    gap: 35px;
+}
+.redes svg{
+    width: 30px;
+    fill: white;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+/*Redes Sociales*/
+
+
+/*Nav*/
+nav{
+    margin-right: 85px;
+    margin-left: 85px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+nav > a, nav > select{
+    margin-right: 22px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+/*Nav*/
+
+
+/*Comportamiento del nav y la seccion de redes*/
+nav > a:hover, nav > select:hover, .redes > svg:hover{
+    transform: scale(1.1);
+}
+/*Comportamiento del nav y la seccion de redes*/
+
+/*Titulo en el header*/
+h1{
+    color: white;
+    font-size: 85px;
+    margin: 70px auto;
+    width:fit-content;
+    font-weight: bold;
+}
+/*Titulo en el header*/
+
+/*Header*/
