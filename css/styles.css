@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Courier New', Courier, monospace;
 }
@@ -112,6 +115,11 @@ h1{
     margin-left: 5%;
     margin-right: 2%;
 }
+.info span{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .imagen{ /*Estilo del apartado de la imagen*/
     height: 80%;
     width: 40%;
@@ -168,21 +176,27 @@ h1{
 
 /*Seccion de las fotos*/
 .get-started{
-    height: 80vh;
+    height: 100vh;
+    border:1px solid red;
 }
-.get-started div:nth-child(1){
+.parte-superior{
+    height: 50%;   
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 25px;
+    justify-content: center;
 }
-.get-started div img{
-    width: 15%;
+.parte-superior > img{
+    width: 100%;
+    filter:grayscale()
 }
-.get-started div:nth-child(2){
+.parte-inferior{
     height:50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-top:2px solid black;
+}
+.parte-inferior{
+    background: url(../img/pexels-kindelmedia-7688336.jpg) no-repeat center/cover;
 }
 .get-started h2{
     text-align: center;
@@ -202,14 +216,125 @@ h1{
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.get-started button:hover{
+    transform: scale(1.1);
 }
 /*Seccion de las fotos*/
 
 
-/*Seccion final*/
+/*Seccion "about us"*/
+.about{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(5, 5, 17);
+}
+.about > div{
+    width:24%;
+    height: 80%;
+    
+}
+.about h4{
+    font-size:20px ;
+    font-weight: bolder;
+    color: white;
+    margin: 10px 15px;
+}
+.about h5{
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 20px 15px;
+}
+.about p{
+    font-size: 18px;
+    color: grey;
+    margin: 20px 15px;
+}
+.recent-post > div{
+    display: flex;
+    border-bottom: 1px solid grey;
+    padding-bottom: 7px;
+    margin: 8px 20px;
+    align-items: center;
+}
+.recent-post div > div:nth-child(1){
+    width: 30%;
+}
+.recent-post div > div:nth-child(2){
+    width: 70%;
+}
+.recent-post h6{
+    color: white;
+}
+.recent-post p{
+    margin:0;
+    color: grey;
+}
+.recent-post img{
+    width:110px;
+}
 
-/*Seccion final*/
+.newsletter-form{
+    border: 8px solid grey;
+    margin: 10px auto;
+    width: 85%;
+    
+}
+.newsletter > h4{
+    margin: 10px 0px 10px 35px;
+}
+.newsletter-form p {
+    margin:15px 18px;
+}
+.newsletter-form input{
+    width: 90%;
+    height: 55px;
+    border:2px solid grey;
+    margin: 70px 18px 0px 18px;
+    color: white;
+    padding: 0px 20px;
+}
+.newsletter-form button{
+    background-color: blueviolet;
+    width: 90%;
+    height: 55px;
+    margin: 20px 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/*Seccion "about us"*/
 /*Main*/
 
 /*Footer*/
+footer{
+    background-color: rgba(0, 0, 0, 0.877) ;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    align-items: center;
+    padding: 0px 60px;
+}
+footer p{
+    color: grey;
+}
+footer > span > ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: disc;
+    color: grey;
+}
+footer > span > ul > li:first-child{
+    list-style-type: none;
+} 
+footer a{
+    transition: all 0.3s ease-in-out;
+}
+footer a:hover{
+    color: rgba(128, 128, 128, 0.603);
+}
 /*Footer*/
