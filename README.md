@@ -3,7 +3,7 @@
 En este projecto uso una pagina web de ejemplo : https://www.behance.net/gallery/169076361/easy-design-services?tracking_source=search_projects|web+landing+easy&l=128
 
 ## 📷 Vista Previa 
-![Captura de Pantalla]()
+![Captura de Pantalla](https://github.com/JuanChazarreta/TP-3/blob/main/Captura%20de%20pantalla%202025-07-08%20014308.png)
 
 ## 🚀 Demo en Linea
 
